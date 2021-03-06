@@ -91,6 +91,7 @@ function generatePassword() {
     
   // return passResult
   console.log(passResult)
+  console.log(passResult.length)
   return passResult;
 }
 
