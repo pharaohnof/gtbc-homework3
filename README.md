@@ -63,7 +63,7 @@ The following image shows the web application's appearance and functionality:
 
 ## Result
 
-I used javascript to code the required behaviors into the assword generator. All criteria were met. The following screenshots show the final product, and javascript code:
+I used javascript to code the required behaviors into the password generator. All criteria were met. The following screenshots show the final product, and javascript code:
 
 ![Final Result - hw2-1](./assets/images/hw3.png)
 ![Final Result - hw2-2](./assets/images/hw3-jscode.png)
