@@ -22,17 +22,19 @@ function generatePassword() {
 
 
   //length?
-  var lengthChoice = Number(window.prompt(`Choose password length: enter a number between 8 and 128`, ``));
+  var lengthChoice = window.prompt(`Choose password length: enter a number between 8 and 128`, ``);
+  // var lengthChoice = Number(window.prompt(`Choose password length: enter a number between 8 and 128`, ``));
   console.log(lengthChoice)
   console.log(typeof lengthChoice)
 
 
   //validate if lengthChoice is number
-  if (isNaN(lengthChoice)) {
-    return (window.alert(`Must Enter Valid Number`), (writePassword = `INVALID ENTRY`))
+  // if (isNaN(lengthChoice)) {
+  //   return (window.alert(`Must Enter Valid Number`), (writePassword = `INVALID ENTRY`))
 
-  //validate if lengthChoice is within parameters  
-  } else if (lengthChoice < 8 || lengthChoice > 128) {
+  // //validate if lengthChoice is within parameters  
+  // } else 
+  if (isNaN(lengthChoice) || lengthChoice < 8 || lengthChoice > 128) {
     return (window.alert(`Must Enter Number Between 8 and 128`), (writePassword = `INVALID ENTRY`))
   }
 
@@ -85,7 +87,7 @@ function generatePassword() {
   //modify passResult as a random string from charArray
   const charArraylength = charArray.length;
     for (let i = 0; i < lengthChoice; i++) {
-      passResult += charArray[Math.floor(Math.random()*charArraylength)];
+      passResult += allChar[Math.floor(Math.random()*allChar.length)];
     }
       
     
